@@ -1,6 +1,6 @@
 let prompt = require("prompt-sync")();
 let inStock = prompt(" Is your item in stock? (yes or no): ").toLowerCase();
-let base = 100; // example base price
+let base = 100;
 
 if (inStock === "yes") {
   let payment = prompt(" How will you be paying? (credit card or paypal): ").toLowerCase();
@@ -64,3 +64,4 @@ if (inStock === "yes") {
 } else {
   console.log(" Sorry, item is out of stock.");
 }
+
